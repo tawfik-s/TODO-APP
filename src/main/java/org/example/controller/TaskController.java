@@ -5,12 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/task")
 public class TaskController {
 
-    @RequestMapping("/list")
-    public String listCustomer(Model model){
-        return "listTasks";
+    @RequestMapping("/task/list")
+    public String listCustomer(){
+        return "list-tasks";
     }
 
 

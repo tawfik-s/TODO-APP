@@ -31,22 +31,20 @@
 		
 			<table>
 				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email</th>
+					<th>name</th>
+					<th>desc</th>
 				</tr>
 				
-<%--				<!-- loop over and print our customers -->--%>
-<%--				<c:forEach var="tempCustomer" items="${customers}">--%>
-<%--				--%>
-<%--					<tr>--%>
-<%--						<td> ${tempCustomer.firstName} </td>--%>
-<%--						<td> ${tempCustomer.lastName} </td>--%>
-<%--						<td> ${tempCustomer.email} </td>--%>
-<%--					</tr>--%>
-<%--				--%>
-<%--				</c:forEach>--%>
-<%--						--%>
+				<!-- loop over and print our customers -->
+				<c:forEach var="task" items="${tasks}">
+
+					<tr>
+						<td> ${task.name} </td>
+						<td> ${task.desc} </td>
+					</tr>
+
+				</c:forEach>
+
 			</table>
 				
 		</div>

@@ -20,7 +20,6 @@ public class TaskDaoImpl implements TaskDao{
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-    @Transactional
     public List<Task> getTasks() {
 
         // get the current hibernate session
@@ -28,7 +27,7 @@ public class TaskDaoImpl implements TaskDao{
 
         // create a query
         Query<Task> theQuery =
-                currentSession.createQuery("FROM task", Task.class);
+                currentSession.createQuery("from Task", Task.class);
 
         // execute query and get result list
         List<Task> tasks = theQuery.getResultList();

@@ -17,8 +17,8 @@ public class Task {
     @Column(name="name")
     private String name;
 
-    @Column(name="desc")
-    private String desc;
+    @Column(name="description")
+    private String description;
 
     public Task() {
     }
@@ -39,12 +39,12 @@ public class Task {
         this.name = name;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Task {
         return "Task{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", desc='" + desc + '\'' +
+                ", desc='" + description + '\'' +
                 '}';
     }
 }

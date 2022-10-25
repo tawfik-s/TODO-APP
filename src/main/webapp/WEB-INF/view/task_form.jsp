@@ -27,6 +27,7 @@
     <div id="container">
         <h3>save task</h3>
         <form:form action="saveTask" modelAttribute="task" method="post">
+            <form:hidden path="id"/>
             <table>
                 <tbody>
                 <tr>

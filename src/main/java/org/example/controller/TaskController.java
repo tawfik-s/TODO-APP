@@ -5,10 +5,7 @@ import org.example.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -47,6 +44,24 @@ public class TaskController {
     @PostMapping("/saveTask")
     public String saveTask(@ModelAttribute("task") Task task){
         taskService.saveTask(task);
+        return "redirect:/task/list";
+    }
+
+    @GetMapping("/showFormForUpdate")
+    public String showFormForUpdate(@RequestParam("taskId") long theId,Model model){
+        //get task from the database
+        Task task=taskService.getTask(theId);
+        //set the customer as a model attribute
+        model.addAttribute("task",task);
+
+        //send over to our form
+        return "task_form";
+    }
+
+    @GetMapping("/delete")
+    public String deleteTask(@RequestParam("taskId") long theId){
+
+        taskService.deleteTask(theId);
         return "redirect:/task/list";
     }
 

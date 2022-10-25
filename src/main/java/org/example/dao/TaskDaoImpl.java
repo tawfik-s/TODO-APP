@@ -35,4 +35,14 @@ public class TaskDaoImpl implements TaskDao{
         // return the results
         return tasks;
     }
+
+    public void saveTask(Task task) {
+        System.out.println(task);
+
+        Session currentSession=sessionFactory.getCurrentSession();
+        System.out.println(task);
+
+        currentSession.save(task);
+
+    }
 }

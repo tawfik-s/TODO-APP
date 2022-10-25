@@ -26,13 +26,16 @@
 	<div id="container">
 	
 		<div id="content">
+			<input type="button" value="add Task"
+			onclick="window.location.href='showFormForAdd'; return false"
+			class="add-button"/>
 		
 			<!--  add our html table here -->
 		
 			<table>
 				<tr>
 					<th>name</th>
-					<th>desc</th>
+					<th>description</th>
 				</tr>
 				
 				<!-- loop over and print our customers -->
@@ -40,7 +43,7 @@
 
 					<tr>
 						<td> ${task.name} </td>
-						<td> ${task.desc} </td>
+						<td> ${task.description} </td>
 					</tr>
 
 				</c:forEach>

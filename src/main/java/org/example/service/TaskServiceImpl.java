@@ -22,4 +22,9 @@ public class TaskServiceImpl implements TaskService{
     public List<Task> getTasks() {
         return taskDao.getTasks();
     }
+
+    @Transactional
+    public void saveTask(Task task) {
+        taskDao.saveTask(task);
+    }
 }

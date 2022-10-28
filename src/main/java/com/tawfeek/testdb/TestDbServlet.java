@@ -1,4 +1,4 @@
-package org.example.testdb;
+package com.tawfeek.testdb;
 
 import java.io.IOException;
 import java.io.PrintWriter;

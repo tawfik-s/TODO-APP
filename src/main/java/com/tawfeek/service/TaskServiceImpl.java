@@ -1,7 +1,7 @@
-package org.example.service;
+package com.tawfeek.service;
 
-import org.example.dao.TaskDao;
-import org.example.entity.Task;
+import com.tawfeek.dao.TaskDao;
+import com.tawfeek.entity.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,10 +1,11 @@
-package org.example.dao;
+package com.tawfeek.service;
 
-import org.example.entity.Task;
+import com.tawfeek.entity.Task;
 
 import java.util.List;
 
-public interface TaskDao {
+public interface TaskService {
+
     public List<Task> getTasks();
 
     void saveTask(Task task);

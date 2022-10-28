@@ -1,4 +1,4 @@
-package org.example.entity;
+package com.tawfeek.entity;
 
 
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;

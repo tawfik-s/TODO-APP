@@ -1,6 +1,6 @@
-package org.example.dao;
+package com.tawfeek.dao;
 
-import org.example.entity.Task;
+import com.tawfeek.entity.Task;
 
 import java.util.List;
 
@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository

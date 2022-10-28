@@ -1,7 +1,7 @@
-package org.example.controller;
+package com.tawfeek.controller;
 
-import org.example.entity.Task;
-import org.example.service.TaskService;
+import com.tawfeek.entity.Task;
+import com.tawfeek.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
